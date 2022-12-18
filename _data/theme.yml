@@ -1,0 +1,16 @@
+title: Minimal Ryan
+
+home:
+  image:
+    src: /assets/images/image1.jpg
+
+footer:
+  contact:
+    - { title: Email, link: mailto:ryansheppardd@gmail.com }
+    - { title: LinkedIn, link: https://www.linkedin.com/in/ryansheppardd/ }
+  social-media:
+    - { title: Twitter, link: https://twitter.com/ryannsheppardd }
+    - { title: Instagram, link: https://www.instagram.com/ryannsheppardd/ }
+  other-links:
+    - { title: GitHub, link: https://github.com/ryanshepps }
+    - { title: DevPost, link: https://devpost.com/ryanshepps }

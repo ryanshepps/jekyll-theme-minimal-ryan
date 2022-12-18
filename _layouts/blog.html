@@ -1,0 +1,21 @@
+---
+layout: default
+---
+
+<div id="blog-page" class="content-container">
+    {%- for post in site.posts -%}
+        <a class="post" href="{{ post.url }}">
+            {%- if post.image -%}
+                <div class="img-container">
+                    <img src="{{ post.image }}" />
+                </div>
+            {%- endif -%}
+            <div class="post-content">
+                <p class="post-title">{{ post.title | escape }}</p>
+                <p class="post-blurb">
+                    {{ post.content | escape | regex_replace: '&lt;[^&gt;]*&gt;', '' }}
+                </p>
+            </div>
+        </a>
+    {%- endfor -%}
+</div>

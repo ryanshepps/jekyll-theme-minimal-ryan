@@ -1,0 +1,15 @@
+<footer class="content-container">
+    {%- for footer_entry in site.data.theme.footer -%}
+        <div class="footer-column">
+            <p>
+                <b>{{ footer_entry[0] | replace: '-', ' ' | capitalize }}</b>
+            </p>
+            {%- for footer_link in footer_entry[1] -%}
+                <a href="{{ footer_link.link }}" target="_blank">
+                    {{ footer_link.title }}
+                </a>
+                <br>
+            {%- endfor -%}
+        </div>
+    {%- endfor -%}
+</footer>

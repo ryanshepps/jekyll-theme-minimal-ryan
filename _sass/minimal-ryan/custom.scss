@@ -1,0 +1,143 @@
+.content-container {
+    margin: auto;
+
+    @media only screen and (min-width: 320px) {
+        width: 320px;
+    }
+
+    @media only screen and (min-width: 600px) {
+        width: 600px;
+    }
+
+    @media only screen and (min-width: 900px) {
+        width: 900px;
+    }
+
+    @media only screen and (min-width: 1200px) {
+        width: 1200px;
+    }
+}
+
+.flexbox-column {
+    display: flex;
+    flex-direction: column;
+}
+
+#site-title {
+    font-size: 24px;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+#home-page {
+    height: calc(100vh - #{$header-height});
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    $right-column-size: 45%;
+
+    #right-column {
+        width: $right-column-size;
+        background-color: $primary-color;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        #content-box {
+            text-align: right;
+
+            @media only screen and (min-width: 1200px) {
+                padding-right: 18%;
+            }
+
+            #home-title {
+                font-size: 128px;
+            }
+
+            p {
+                font-size: $biggest-font-size;
+            }
+        }
+
+    }
+
+    #left-column {
+        display: flex;
+        justify-content: center;
+
+        width: calc(100% - #{$right-column-size});
+        overflow: hidden;
+
+        img {
+            object-fit: fill;
+        }
+    }
+}
+
+#blog-page {
+    min-height: calc(100vh - #{$header-height});
+
+    .post {
+        display: flex;
+        gap: 10px;
+        height: 104px;
+        padding: 10px;
+
+        .img-container {
+            flex: 1;
+            overflow: hidden;
+            
+            img {
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+
+        .post-content {
+            flex: 7;
+
+            .post-title {
+                font-size: $big-font-size;
+                font-weight: bold;
+                padding-bottom: 16px;
+            }
+
+            .post-blurb {
+                $line-height: 1.2em;
+                $num-lines: 3;
+
+                color: $tertiary-color;
+                overflow: hidden;
+                max-height: calc(#{$line-height} * #{$num-lines});
+                line-height: $line-height;
+            }
+
+        }
+    }
+}
+
+#post-page {
+    min-height: calc(100vh - #{$header-height});
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    * {
+        padding: 8px 0;
+        width: 100%;
+        line-height: 1.4em;
+
+        @media only screen and (min-width: 1200px) {
+            width: 65%;
+        }
+    }
+
+    img {
+        height: 300px;
+        width: 100%;
+        object-fit: cover;
+    }
+}

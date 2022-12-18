@@ -1,0 +1,26 @@
+/* Colors */
+$primary-color: white;
+$secondary-color: black;
+$tertiary-color: #575757;
+
+/* Font */
+$base-font-family: "Roboto", Arial;
+$base-font-color: $secondary-color;
+
+$base-font-size: 16px;
+$big-font-size: 18px;
+$biggest-font-size: 20px;
+
+@font-face {
+    font-family: "Roboto";
+    src: url("../fonts/Roboto-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url("../fonts/Roboto-Bold.ttf");
+    font-weight: bold;
+}
+
+/* Layout */
+$header-height: 80px;
