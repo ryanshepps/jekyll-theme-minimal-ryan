@@ -43,6 +43,10 @@ header {
     }
 }
 
+ul, li {
+    list-style-position: inside;
+}
+
 footer {
     display: flex;
     justify-content: space-between;
