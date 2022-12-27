@@ -47,6 +47,10 @@ ul, li, ol {
     list-style-position: inside;
 }
 
+img {
+    object-fit: contain;
+}
+
 footer {
     display: flex;
     justify-content: space-between;
