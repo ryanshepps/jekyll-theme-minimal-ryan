@@ -30,50 +30,85 @@
 }
 
 #home-page {
-    height: calc(100vh - #{$header-height});
+    $large-screen-second-column-width: 45%;
+    $mobile-column-height: calc(90vh - #{$header-height});
+
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
 
-    $right-column-size: 45%;
-
-    #right-column {
-        width: $right-column-size;
-        background-color: $primary-color;
-
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-
-        #content-box {
-            text-align: right;
-
-            @include large-screen {
-                padding-right: 18%;
-            }
-
-            #home-title {
-                font-size: 128px;
-            }
-
-            p {
-                font-size: $biggest-font-size;
-            }
-        }
-
+    @include large-screen {
+        flex-direction: row;
+        height: calc(100vh - #{$header-height});
     }
 
-    #left-column {
+    #first-column {
         display: flex;
         justify-content: center;
-
-        width: calc(100% - #{$right-column-size});
         overflow: hidden;
+        height: $mobile-column-height;
+
+        @include large-screen {
+            width: calc(100% - #{$large-screen-second-column-width});
+            height: 100%;
+        }
 
         img {
             object-fit: fill;
         }
+    }
+
+    #second-column {
+        background-color: $primary-color;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: $mobile-column-height;
+
+        @include large-screen {
+            width: $large-screen-second-column-width;
+            height: 100%;
+        }
+
+        #content-box {
+            text-align: center;
+
+            @include large-screen {
+                text-align: right;
+                padding-right: 18%;
+            }
+
+            #home-title {
+                font-size: 16vw;
+
+                @include small-screen {
+                    font-size: 12vw;
+                }
+
+                @include medium-screen {
+                    font-size: 10vw;
+                }
+
+                @include large-screen {
+                    font-size: 8vw;
+                }
+            }
+
+            p {
+                font-size: $biggest-font-size;
+
+                @include extra-small-screen {
+                    padding: 0 2%;
+                }
+
+                @include small-screen {
+                    padding: 0;
+                }
+            }
+        }
+
     }
 }
 
