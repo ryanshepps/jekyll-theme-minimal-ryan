@@ -1,20 +1,20 @@
 .content-container {
     margin: auto;
 
-    @media only screen and (min-width: 320px) {
-        width: 320px;
+    @include extra-small-screen {
+        width: $screen-width-extra-small;
     }
 
-    @media only screen and (min-width: 600px) {
-        width: 600px;
+    @include small-screen {
+        width: $screen-width-small;
     }
 
-    @media only screen and (min-width: 900px) {
-        width: 900px;
+    @include medium-screen {
+        width: $screen-width-medium;
     }
 
-    @media only screen and (min-width: 1200px) {
-        width: 1200px;
+    @include large-screen {
+        width: $screen-width-large;
     }
 }
 
@@ -49,7 +49,7 @@
         #content-box {
             text-align: right;
 
-            @media only screen and (min-width: 1200px) {
+            @include large-screen {
                 padding-right: 18%;
             }
 
@@ -130,7 +130,7 @@
         width: 100%;
         line-height: 1.4em;
 
-        @media only screen and (min-width: 1200px) {
+        @include large-screen {
             width: 65%;
         }
     }

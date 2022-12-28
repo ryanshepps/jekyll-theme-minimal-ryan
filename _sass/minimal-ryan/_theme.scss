@@ -23,4 +23,33 @@ $biggest-font-size: 20px;
 }
 
 /* Layout */
+$screen-width-extra-small: 320px;
+$screen-width-small: 600px;
+$screen-width-medium: 900px;
+$screen-width-large: 1200px;
+
+@mixin extra-small-screen {
+    @media only screen and (min-width: #{$screen-width-extra-small}) {
+        @content;
+    }
+}
+
+@mixin small-screen {
+    @media only screen and (min-width: #{$screen-width-small}) {
+        @content;
+    }
+}
+
+@mixin medium-screen {
+    @media only screen and (min-width: #{$screen-width-medium}) {
+        @content;
+    }
+}
+
+@mixin large-screen {
+    @media only screen and (min-width: #{$screen-width-large}) {
+        @content;
+    }
+}
+
 $header-height: 80px;
