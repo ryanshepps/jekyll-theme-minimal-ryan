@@ -1,5 +1,6 @@
 ---
 title: Theme Cheat Sheet
+image: /assets/images/image1.jpg
 ---
 
 Here are some markdown elements that this theme formats. Don't see one here that you want? [Open a pull request](https://github.com/ryanshepps/jekyll-theme-minimal-ryan/compare).
