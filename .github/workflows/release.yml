@@ -1,0 +1,41 @@
+name: Publish new release
+
+on:
+  push:
+    tags:
+      - '[0-9]+.[0-9]+.[0-9]+'
+  workflow_dispatch:
+
+jobs:
+  github-release:
+    runs-on: ubuntu-latest
+    name: 'Publish GitHub Release'
+    steps:
+      - uses: actions/checkout@v3
+      - name: Generate Release Notes
+        run: |
+          pip install -U commitizen
+          cz changelog
+      - name: Publish to Repository Releases
+        uses: softprops/action-gh-release@v1
+        with:
+          body_path: CHANGELOG.md
+
+  ruby-release:
+    runs-on: ubuntu-latest
+    name: 'Publish Ruby Gem Release'
+    steps:
+      - uses: actions/checkout@v3
+      - uses: ruby/setup-ruby@v1
+        with: 
+          ruby-version: '3.1.3'
+      - name: Publish to Rubygems.org 
+        run: |
+          mkdir -p $HOME/.gem
+          touch $HOME/.gem/credentials
+          chmod 0600 $HOME/.gem/credentials
+          printf -- "---\n:rubygems_api_key: ${GEM_HOST_API_KEY}\n" > $HOME/.gem/credentials
+          gem build jekyll-theme-minimal-ryan.gemspec
+          gem push *.gem
+        env:
+          GEM_HOST_API_KEY: "${{secrets.GEM_HOST_API_KEY}}"
