@@ -1,7 +1,8 @@
-## 0.2.1 (2022-12-28)
+## 0.3.0 (2023-01-03)
 
 ### Feat
 
+- add capability to add more pages to header
 - add post cheat sheet
 - initialize theme
 
@@ -16,4 +17,5 @@
 
 ### Refactor
 
+- add example image to cheat sheet post
 - convert media queries to mixins
