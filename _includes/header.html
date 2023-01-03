@@ -1,11 +1,22 @@
 <header class="content-container">
     {%- assign page_paths = site.pages | map: "path" -%}
-    {%- assign titles_size = site.pages | map: 'title' | join: '' | size -%}
 
     <a id="site-title" href="/">{{ site.data.theme.title }}</a>
 
     <nav>
         <a href="/">Home</a>
-        <a href="/blog">Blog</a>    
+        {%- for path in page_paths -%}
+            {%- assign page = site.pages | where: "path", path | first -%}
+            {%- if page.dir == "/" and page.url != "/" -%}
+                <a href="{{ page.url }}">
+                    {%- if page.title -%}
+                        {{ page.title | escape }}
+                    {%- else -%}
+                        {%- assign page_title = page.name | split: "." -%}
+                        {{ page_title[0] | capitalize }}
+                    {%- endif -%}
+                </a>
+            {%- endif -%}
+        {%- endfor -%}
     </nav>
 </header>
