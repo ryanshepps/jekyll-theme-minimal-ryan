@@ -19,7 +19,7 @@ jobs:
       - name: Publish to Repository Releases
         uses: softprops/action-gh-release@v1
         with:
-          body_path: CHANGELOG.md
+          body_path: ${{ github.workspace }}/CHANGELOG.md
 
   ruby-release:
     runs-on: ubuntu-latest
