@@ -16,15 +16,33 @@ theme: minimal-ryan
 
 And then execute:
 
-    $ bundle
+```
+bundle
+```
 
-Or install it yourself as:
-
-    $ gem install jekyll-theme-minimal-ryan
+This will install all dependencies.
 
 ## Usage
 
-All customizable options can be configured in [_data/theme.yml](_data/theme.yml).
+To test the theme locally, run
+
+```
+bundle exec jekyll serve
+```
+
+which will serve your site at [http://localhost:4000](http://localhost:4000).
+
+### Customization
+
+All customizable options can be configured in [_data/theme.yml](_data/theme.yml). Simply create your own data file and override the settings in [_data/theme.yml](_data/theme.yml).
+
+### Adding a Blog Home
+
+The theme provides you with a blog home that can display all the posts in the _posts folder. Simple create a file at the root directory and give it the `blog` layout in the front matter.
+
+### Customizing the Header
+
+Whenever you create a new page (with any layout) at the root directory, the theme will add an entry to the header. If you want the name of the entry to be different from the file, add a title to the front matter of the page. This title will show up on the header instead.
 
 ## Contributing
 
