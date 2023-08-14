@@ -1,3 +1,13 @@
+## 0.4.0 (2023-08-14)
+
+### Feat
+
+- make width smoother at smaller screens
+
+### Fix
+
+- width becoming larger as screen gets smaller
+
 ## 0.3.0 (2023-01-03)
 
 ### Feat
