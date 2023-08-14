@@ -165,10 +165,10 @@
         padding: 8px 0;
         width: 100%;
         line-height: 1.4em;
+    }
 
-        @include large-screen {
-            width: 65%;
-        }
+    & > *:not(#post-title-img) {
+        max-width: 780px;
     }
 
     #post-title-img {
