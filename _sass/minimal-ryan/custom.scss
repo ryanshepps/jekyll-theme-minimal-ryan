@@ -168,7 +168,7 @@
     }
 
     & > *:not(#post-title-img) {
-        max-width: 780px;
+        max-width: $content-max-width;
     }
 
     #post-title-img {
