@@ -1,3 +1,13 @@
+## 0.4.1 (2023-08-19)
+
+### Fix
+
+- footer styling
+
+### Refactor
+
+- move same value to variable
+
 ## 0.4.0 (2023-08-14)
 
 ### Feat
