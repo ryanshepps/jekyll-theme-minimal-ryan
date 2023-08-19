@@ -55,9 +55,10 @@ footer {
     display: flex;
     justify-content: space-between;
 
-    padding: 30px 0;
-    line-height: 28px;
-    font-size: $big-font-size;
+    padding: 60px 0 30px 0;
+    line-height: 23px;
+    font-size: $base-font-size;
+    max-width: 780px;
 
     background-color: $primary-color;
     z-index: 2;
