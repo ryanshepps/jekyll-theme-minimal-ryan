@@ -1,3 +1,10 @@
+## 0.4.2 (2023-08-23)
+
+### Fix
+
+- list spacing
+- links not appearing as links
+
 ## 0.4.1 (2023-08-19)
 
 ### Fix
