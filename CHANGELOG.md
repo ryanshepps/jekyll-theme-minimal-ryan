@@ -1,3 +1,13 @@
+## 0.5.0 (2024-06-06)
+
+### Feat
+
+- add syntax highlighting for codeblocks
+
+### Refactor
+
+- upgrade dependencies
+
 ## 0.4.2 (2023-08-23)
 
 ### Fix
