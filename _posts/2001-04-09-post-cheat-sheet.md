@@ -42,8 +42,10 @@ Here are some markdown elements that this theme formats. Don't see one here that
 
 # Code
 
-```
-Code Block
+```javascript
+// Highlighted code block
+const number = 8;
+console.log(number);
 ```
 
 `Inline Code`
