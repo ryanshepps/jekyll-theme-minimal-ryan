@@ -1,3 +1,9 @@
+## 0.6.0 (2024-06-07)
+
+### Feat
+
+- define behaviour for code overflow
+
 ## 0.5.0 (2024-06-06)
 
 ### Feat
