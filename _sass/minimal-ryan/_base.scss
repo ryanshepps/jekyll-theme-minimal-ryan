@@ -63,3 +63,8 @@ footer {
     background-color: $primary-color;
     z-index: 2;
 }
+
+pre {
+    max-width: $content-max-width;
+    overflow-x: scroll;
+}
