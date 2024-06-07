@@ -49,3 +49,9 @@ console.log(number);
 ```
 
 `Inline Code`
+
+# Asides
+
+<aside>
+💡 This is an aside.
+</aside>

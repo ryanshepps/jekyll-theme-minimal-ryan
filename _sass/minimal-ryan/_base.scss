@@ -68,3 +68,9 @@ pre {
     max-width: $content-max-width;
     overflow-x: scroll;
 }
+
+aside {
+    background-color: $tertiary-color-light;
+    box-sizing: border-box;
+    padding: 20px;
+}
