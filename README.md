@@ -57,3 +57,7 @@ Your theme is setup just like a normal Jekyll site! To test your theme, run `bun
 ## License
 
 The theme is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
+
+## Acknowledgements
+
+- Syntax highlighting for `<code>` blocks comes from https://github.com/jwarby/jekyll-pygments-themes.
