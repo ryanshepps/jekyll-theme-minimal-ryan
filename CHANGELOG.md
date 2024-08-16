@@ -1,3 +1,9 @@
+## 0.8.0 (2024-08-16)
+
+### Feat
+
+- change code blocks to match theme
+
 ## 0.7.0 (2024-06-07)
 
 ### Feat
