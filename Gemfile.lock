@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    jekyll-theme-minimal-ryan (0.9.0)
+    jekyll-theme-minimal-ryan (0.9.1)
       jekyll (~> 4.4)
       jekyll-regex-replace (~> 1.1.0)
 
