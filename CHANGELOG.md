@@ -1,3 +1,9 @@
+## 0.9.1 (2025-08-30)
+
+### Fix
+
+- make entire background primary color
+
 ## 0.9.0 (2025-08-30)
 
 ### Feat
