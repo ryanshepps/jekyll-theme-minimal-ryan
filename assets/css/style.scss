@@ -1,9 +1,7 @@
 ---
 ---
 
-@import
-    'minimal-ryan/_theme',
-    'minimal-ryan/_base',
-    'minimal-ryan/custom',
-    'code.css'
-;
+@use 'minimal-ryan/theme';
+@use 'minimal-ryan/base';
+@use 'minimal-ryan/custom';
+@import 'code.css';
