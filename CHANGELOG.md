@@ -1,3 +1,14 @@
+## 0.9.0 (2025-08-30)
+
+### Feat
+
+- improve readability
+
+### Refactor
+
+- remove use of deprecated @import
+- upgrade dependencies to latest versions
+
 ## 0.8.0 (2024-08-16)
 
 ### Feat
