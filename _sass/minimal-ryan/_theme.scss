@@ -1,6 +1,6 @@
 /* Colors */
-$primary-color: white;
-$secondary-color: black;
+$primary-color: #fafafa;
+$secondary-color: #444;
 $tertiary-color: #575757;
 $tertiary-color-light: #EAEAEA;
 
@@ -8,7 +8,7 @@ $tertiary-color-light: #EAEAEA;
 $base-font-family: "Roboto", Arial;
 $base-font-color: $secondary-color;
 
-$base-font-size: 16px;
+$base-font-size: 18px;
 $big-font-size: 18px;
 $biggest-font-size: 20px;
 
@@ -54,4 +54,4 @@ $screen-width-large: 1200px;
 }
 
 $header-height: 80px;
-$content-max-width: 780px;
+$content-max-width: 700px;
