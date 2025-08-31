@@ -1,13 +1,14 @@
 @use 'theme';
 
-body, h1, h2, h3, h4, h5, h6,
-p, ol, ul {
+body, p, ol, ul {
     margin: 0;
     padding: 0;
 }
 
 body {
-    font: theme.$base-font-size theme.$base-font-family theme.$base-font-color;
+    font-family: theme.$base-font-family;
+    font-size: theme.$base-font-size;
+    color: theme.$base-font-color;
     display: flex;
     flex-direction: column;
 }
