@@ -11,6 +11,7 @@ body {
     color: theme.$base-font-color;
     display: flex;
     flex-direction: column;
+    background-color: theme.$primary-color;
 }
 
 a {
