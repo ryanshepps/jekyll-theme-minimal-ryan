@@ -7,5 +7,18 @@ defaults:
 
 theme: jekyll-theme-minimal-ryan
 
+minimal_ryan:
+  title: Minimal Ryan
+  home:
+    image:
+      src: /assets/images/image1.jpg
+  footer:
+    contact:
+      - { title: Email, link: mailto:example@example.com }
+    social-media:
+      - { title: Twitter, link: https://x.com/example }
+    other-links:
+      - { title: GitHub, link: https://github.com/example }
+
 plugins:
   - jekyll-regex-replace
