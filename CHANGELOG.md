@@ -1,3 +1,9 @@
+## 0.10.1 (2026-05-20)
+
+### Fix
+
+- generate per-version release notes using cz changelog --start-rev
+
 ## 0.10.0 (2026-05-20)
 
 ### Feat
