@@ -1,3 +1,20 @@
+## 0.10.0 (2026-05-20)
+
+### Feat
+
+- improve readability
+
+### Fix
+
+- update Twitter link to x.com/sheppsryan
+- make entire background primary color
+
+### Refactor
+
+- move theme customization from _data/theme.yml to _config.yml minimal_ryan namespace
+- remove use of deprecated @import
+- upgrade dependencies to latest versions
+
 ## 0.9.1 (2025-08-30)
 
 ### Fix
