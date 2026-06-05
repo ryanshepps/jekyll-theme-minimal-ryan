@@ -10,6 +10,27 @@ layout: default
         <div id="content-box">
             <h1 id="home-title">{{ site.minimal_ryan.title }}</h1>
             {{ content }}
+            {%- if site.minimal_ryan.home.links -%}
+                <div id="home-links" aria-label="Social links">
+                    {%- for home_link in site.minimal_ryan.home.links -%}
+                        <a href="{{ home_link.link }}" target="_blank" rel="noopener noreferrer" aria-label="{{ home_link.title }}" title="{{ home_link.title }}">
+                            {%- assign home_link_icon = home_link.icon | default: home_link.title | downcase -%}
+                            {%- case home_link_icon -%}
+                                {%- when "linkedin" -%}
+                                    <svg aria-hidden="true" viewBox="0 0 24 24">
+                                        <path d="M6.94 5a2 2 0 1 1-4 0 2 2 0 0 1 4 0ZM7 8.48H3V21h4V8.48Zm6.32 0H9.34V21h3.94v-6.57c0-3.66 4.77-4 4.77 0V21H22v-7.93c0-6.17-7.06-5.94-8.72-2.91l.04-1.68Z" />
+                                    </svg>
+                                {%- when "x" -%}
+                                    <svg aria-hidden="true" viewBox="0 0 24 24">
+                                        <path d="M18.24 2.25h3.31l-7.23 8.26 8.5 11.24h-6.65l-5.21-6.82-5.97 6.82H1.68l7.73-8.84L1.25 2.25h6.83l4.71 6.23 5.45-6.23Zm-1.16 17.52h1.83L7.08 4.13H5.12l11.96 15.64Z" />
+                                    </svg>
+                                {%- else -%}
+                                    {{ home_link.title }}
+                            {%- endcase -%}
+                        </a>
+                    {%- endfor -%}
+                </div>
+            {%- endif -%}
         </div>
     </div>
 </div>

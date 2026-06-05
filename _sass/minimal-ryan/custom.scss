@@ -109,6 +109,34 @@
                     padding: 0;
                 }
             }
+
+            #home-links {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 10px;
+                margin-top: 24px;
+
+                @include theme.large-screen {
+                    justify-content: flex-end;
+                }
+
+                a {
+                    display: inline-flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 44px;
+                    height: 44px;
+                    line-height: 0;
+
+                    svg {
+                        display: block;
+                        width: 26px;
+                        height: 26px;
+                        fill: currentColor;
+                    }
+                }
+            }
         }
 
     }
