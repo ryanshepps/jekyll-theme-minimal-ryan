@@ -1,3 +1,9 @@
+## 0.11.0 (2026-06-05)
+
+### Feat
+
+- add home social icon links
+
 ## 0.10.1 (2026-05-20)
 
 ### Fix
