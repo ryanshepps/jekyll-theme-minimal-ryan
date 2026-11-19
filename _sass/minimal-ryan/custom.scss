@@ -164,6 +164,8 @@
         .post-content {
             flex: 7;
             width: 100%;
+            min-width: 0;
+            overflow: hidden;
 
             .post-title {
                 font-size: theme.$big-font-size;
