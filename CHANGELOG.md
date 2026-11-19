@@ -1,3 +1,9 @@
+## 0.11.1 (2026-11-19)
+
+### Fix
+
+- keep blog card image visible when blurb has long unbreakable text
+
 ## 0.11.0 (2026-06-05)
 
 ### Feat
